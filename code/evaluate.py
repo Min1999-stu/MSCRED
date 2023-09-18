@@ -53,7 +53,7 @@ for i in range(valid_start, test_end):
 	reconstructed_matrix_temp = np.transpose(reconstructed_matrix_temp[0], [0, 3, 1, 2])
 
 	#first (short) duration scale for evaluation  
-	select_gt_matrix = np.array(gt_matrix_temp)[4][0] #get last step matrix
+	select_gt_matrix = np.array(gt_matrix_temp)[4][0] #get last step matrix  输入的第5个step和输出矩阵做差
 
 	select_reconstructed_matrix = np.array(reconstructed_matrix_temp)[0][0]
 
