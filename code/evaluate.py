@@ -8,7 +8,7 @@ import os
 
 parser = argparse.ArgumentParser(description = 'MSCRED evaluation')
 parser.add_argument('--thred_broken', type = int, default = 0.005,
-				   help = 'broken pixel thred')
+				   help = 'broken pixel thred')        #这个是验证集的阈值吗？
 parser.add_argument('--alpha', type = int, default = 1.5,
 				   help = 'scale coefficient of max valid anomaly')
 parser.add_argument('--valid_start_point',  type = int, default = 8000,
